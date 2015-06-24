@@ -1,0 +1,13 @@
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\bin\Debug\Label Viewer.exe.config
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\bin\Debug\Label Viewer.exe
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\bin\Debug\Label Viewer.pdb
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\obj\Debug\Label Viewer.csprojResolveAssemblyReference.cache
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\obj\Debug\Label_Viewer.Properties.Resources.resources
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\obj\Debug\Label Viewer.csproj.GenerateResource.Cache
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\obj\Debug\Label Viewer.exe
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\obj\Debug\Label Viewer.pdb
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\obj\Debug\Label_Viewer.LabelViewer.resources
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\obj\Debug\Label_Viewer.FileList.resources
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\obj\Debug\Label_Viewer.LabelSettings.resources
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\obj\Debug\Label_Viewer.PreviewWindow.resources
+C:\Users\aui\Documents\GitHub\Label Viewer\Label Viewer\obj\Debug\Label_Viewer.PrintLabel.resources
