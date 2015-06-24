@@ -151,6 +151,7 @@ namespace Label_Viewer
             {
                 labelList.SelectedIndex = i;
             }
+            selectAllButton.Enabled = false;
         }
 
         private void startPollingButton_Click(object sender, EventArgs e)
