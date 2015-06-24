@@ -45,15 +45,15 @@
             this.browseButton = new System.Windows.Forms.Button();
             this.settingsText = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.moveOffButton = new System.Windows.Forms.Button();
+            this.moveOnButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.waitTime = new System.Windows.Forms.NumericUpDown();
             this.cancelButton = new System.Windows.Forms.Button();
             this.doneButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.moveOnButton = new System.Windows.Forms.Button();
-            this.moveOffButton = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.height)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.width)).BeginInit();
@@ -189,6 +189,7 @@
             // 
             // dpi
             // 
+            this.dpi.AllowDrop = true;
             this.dpi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dpi.Items.Add("152 dpi (6 dpmm)");
             this.dpi.Items.Add("203 dpi (8 dpmm)");
@@ -199,6 +200,7 @@
             this.dpi.Size = new System.Drawing.Size(204, 20);
             this.dpi.TabIndex = 0;
             this.dpi.Text = "300 dpi (12 dpmm)";
+            this.dpi.Wrap = true;
             // 
             // groupBox3
             // 
@@ -270,6 +272,39 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "APPLICATION SETTINGS";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(151, 19);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 13);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Move to Archive";
+            // 
+            // moveOffButton
+            // 
+            this.moveOffButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moveOffButton.Location = new System.Drawing.Point(205, 42);
+            this.moveOffButton.Name = "moveOffButton";
+            this.moveOffButton.Size = new System.Drawing.Size(33, 23);
+            this.moveOffButton.TabIndex = 9;
+            this.moveOffButton.Text = "Off";
+            this.moveOffButton.UseVisualStyleBackColor = true;
+            this.moveOffButton.Click += new System.EventHandler(this.moveOffButton_Click);
+            // 
+            // moveOnButton
+            // 
+            this.moveOnButton.Enabled = false;
+            this.moveOnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moveOnButton.Location = new System.Drawing.Point(166, 42);
+            this.moveOnButton.Name = "moveOnButton";
+            this.moveOnButton.Size = new System.Drawing.Size(33, 23);
+            this.moveOnButton.TabIndex = 8;
+            this.moveOnButton.Text = "On";
+            this.moveOnButton.UseVisualStyleBackColor = true;
+            this.moveOnButton.Click += new System.EventHandler(this.moveOnButton_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -317,10 +352,10 @@
             // 
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelButton.Location = new System.Drawing.Point(460, 230);
+            this.cancelButton.Location = new System.Drawing.Point(459, 224);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelButton.TabIndex = 1;
+            this.cancelButton.TabIndex = 5;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
@@ -328,10 +363,10 @@
             // doneButton
             // 
             this.doneButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.doneButton.Location = new System.Drawing.Point(365, 230);
+            this.doneButton.Location = new System.Drawing.Point(365, 224);
             this.doneButton.Name = "doneButton";
             this.doneButton.Size = new System.Drawing.Size(75, 23);
-            this.doneButton.TabIndex = 0;
+            this.doneButton.TabIndex = 4;
             this.doneButton.Text = "Done";
             this.doneButton.UseVisualStyleBackColor = true;
             this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
@@ -339,39 +374,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // moveOnButton
-            // 
-            this.moveOnButton.Enabled = false;
-            this.moveOnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moveOnButton.Location = new System.Drawing.Point(166, 42);
-            this.moveOnButton.Name = "moveOnButton";
-            this.moveOnButton.Size = new System.Drawing.Size(33, 23);
-            this.moveOnButton.TabIndex = 8;
-            this.moveOnButton.Text = "On";
-            this.moveOnButton.UseVisualStyleBackColor = true;
-            this.moveOnButton.Click += new System.EventHandler(this.moveOnButton_Click);
-            // 
-            // moveOffButton
-            // 
-            this.moveOffButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moveOffButton.Location = new System.Drawing.Point(205, 42);
-            this.moveOffButton.Name = "moveOffButton";
-            this.moveOffButton.Size = new System.Drawing.Size(33, 23);
-            this.moveOffButton.TabIndex = 9;
-            this.moveOffButton.Text = "Off";
-            this.moveOffButton.UseVisualStyleBackColor = true;
-            this.moveOffButton.Click += new System.EventHandler(this.moveOffButton_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(151, 19);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Move to Archive";
             // 
             // LabelSettings
             // 

@@ -60,6 +60,7 @@ namespace Label_Viewer
                 labelList.Visible = false;
             }
             settingsButton.Enabled = ContainsZPL();
+            selectAllButton.Enabled = labelList.SelectedItems.Count != labelList.Items.Count;
         }
 
         private void SearchSourceDirectory()
@@ -138,6 +139,7 @@ namespace Label_Viewer
         {
             var settings_tab = new LabelSettings(this);
             settings_tab.ShowDialog();
+            global_timer.Interval = wait_time;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -399,7 +401,10 @@ namespace Label_Viewer
                     MessageBox.Show(archive_path + " is not a path to a valid directory." +
                     " Please provide a valid path to the archive directory", "Invalid Archive Path");
                 }
-
+                else if (Directory.GetFiles(archive_path).Length == 0)
+                {
+                    MessageBox.Show("The specified archive folder is empty.", "No files to transfer.");
+                }
                 else
                 {
 

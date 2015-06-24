@@ -138,7 +138,10 @@ namespace Label_Viewer
                     MessageBox.Show(archive_path + " is not a path to a valid directory." +
                     " Please provide a valid path to the archive directory", "Invalid Archive Path");
                 }
-
+                else if (Directory.GetFiles(archive_path).Length == 0)
+                {
+                    MessageBox.Show("The specified archive folder is empty.", "No files to transfer.");
+                }
                 else
                 {
 

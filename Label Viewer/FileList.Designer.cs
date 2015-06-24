@@ -50,7 +50,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(380, 250);
+            this.groupBox1.Size = new System.Drawing.Size(380, 194);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "AVAILABLE LABEL FILES";
@@ -62,7 +62,7 @@
             this.labelList.Location = new System.Drawing.Point(19, 19);
             this.labelList.Name = "labelList";
             this.labelList.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.labelList.Size = new System.Drawing.Size(342, 212);
+            this.labelList.Size = new System.Drawing.Size(342, 147);
             this.labelList.TabIndex = 0;
             // 
             // groupBox2
@@ -76,7 +76,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(399, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(235, 250);
+            this.groupBox2.Size = new System.Drawing.Size(235, 194);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "ACTIONS";
@@ -158,7 +158,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.CancelButton = this.closeButton;
-            this.ClientSize = new System.Drawing.Size(646, 271);
+            this.ClientSize = new System.Drawing.Size(646, 224);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

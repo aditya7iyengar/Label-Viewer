@@ -100,7 +100,7 @@
             this.printPDFButton.Location = new System.Drawing.Point(18, 149);
             this.printPDFButton.Name = "printPDFButton";
             this.printPDFButton.Size = new System.Drawing.Size(75, 23);
-            this.printPDFButton.TabIndex = 13;
+            this.printPDFButton.TabIndex = 12;
             this.printPDFButton.Text = "Print as PDF";
             this.printPDFButton.UseVisualStyleBackColor = true;
             this.printPDFButton.Click += new System.EventHandler(this.printPDFButton_Click);
@@ -111,7 +111,7 @@
             this.trackBar1.Location = new System.Drawing.Point(18, 243);
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(75, 45);
-            this.trackBar1.TabIndex = 12;
+            this.trackBar1.TabIndex = 13;
             this.trackBar1.Value = 3;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
@@ -121,7 +121,7 @@
             this.printButton.Location = new System.Drawing.Point(18, 30);
             this.printButton.Name = "printButton";
             this.printButton.Size = new System.Drawing.Size(75, 23);
-            this.printButton.TabIndex = 11;
+            this.printButton.TabIndex = 9;
             this.printButton.Text = "Print Label";
             this.printButton.UseVisualStyleBackColor = true;
             this.printButton.Click += new System.EventHandler(this.printButton_Click);
@@ -132,7 +132,7 @@
             this.emailButton.Location = new System.Drawing.Point(18, 108);
             this.emailButton.Name = "emailButton";
             this.emailButton.Size = new System.Drawing.Size(75, 23);
-            this.emailButton.TabIndex = 10;
+            this.emailButton.TabIndex = 11;
             this.emailButton.Text = "Email Image";
             this.emailButton.UseVisualStyleBackColor = true;
             this.emailButton.Click += new System.EventHandler(this.emailButton_Click);
@@ -143,7 +143,7 @@
             this.saveButton.Location = new System.Drawing.Point(18, 68);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 9;
+            this.saveButton.TabIndex = 10;
             this.saveButton.Text = "Save Image";
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);

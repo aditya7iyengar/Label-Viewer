@@ -21,7 +21,7 @@ namespace Label_Viewer
         {
             InitializeComponent();
             form1 = form_instance;
-            dpi.SelectedIndex = 2;
+            waitTime.Value = form1.wait_time/1000;
             if (form1.move_to_archive == true)
             {
                 moveOnButton.Enabled = false;
@@ -31,6 +31,24 @@ namespace Label_Viewer
             {
                 moveOnButton.Enabled = true;
                 moveOffButton.Enabled = false;
+            }
+            width.Value = System.Convert.ToDecimal(form1.width);
+            height.Value = System.Convert.ToDecimal(form1.height);
+            if (System.Convert.ToDecimal(form1.dpmm) < 8)
+            {
+                dpi.SelectedIndex = 0;
+            }
+            else if (System.Convert.ToDecimal(form1.dpmm) < 10)
+            {
+                dpi.SelectedIndex = 1;
+            }
+            else if (System.Convert.ToDecimal(form1.dpmm) < 18)
+            {
+                dpi.SelectedIndex = 2;
+            }
+            else
+            {
+                dpi.SelectedIndex = 3;
             }
         }
 
